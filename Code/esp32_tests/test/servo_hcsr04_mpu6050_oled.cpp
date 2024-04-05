@@ -8,9 +8,6 @@
 #include <Adafruit_MPU6050.h>
 #include <Adafruit_SSD1306.h>
 #include <Adafruit_Sensor.h>
-
-// Include Adafruit MCP23X17 Library
-#include <Adafruit_MCP23X17.h>
  
 // Creat object to represent PCA9685 at default I2C address
 Adafruit_PWMServoDriver pca9685 = Adafruit_PWMServoDriver(0x40);
@@ -45,16 +42,12 @@ const int echoPin = 18;
 long duration;
 float distanceCm;
 float distanceInch;
-
-// Objects and variables for MCP23X17
-Adafruit_MCP23X17 mcp;
-#define LIMIT_SWITCH 12     // MCP23XXX pin LIMIT_SWITCH is connected to
  
 void setup() {
   // Serial monitor setup
   Serial.begin(115200);
   // while (!Serial);
-  Serial.println("MPU6050+OLED+HC-SR04+PCA9685+MCP23X17 with limit switch demo");
+  Serial.println("MPU6050+OLED+HC-SR04+PCA9685 demo");
 
   // Initialize PCA9685
   pca9685.begin();
@@ -83,13 +76,6 @@ void setup() {
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setRotation(0);
-
-  if (!mcp.begin_I2C()) {
-    Serial.println("Error with MCP23X17.");
-    while (1);
-  }
-  // configure pin for output
-  mcp.pinMode(LIMIT_SWITCH, INPUT);
 }
  
 void loop() {
@@ -181,15 +167,5 @@ void loop() {
   display.print(" cm");
 
   display.display();
-
-  if (mcp.digitalRead(LIMIT_SWITCH) == HIGH)
-  {
-    Serial.println("Activated!");
-  }
-  else
-  {
-    Serial.println("Not activated.");
-  }
-
   delay(100);
 }

@@ -1,3 +1,5 @@
+// Main file to test hardware on ESP32
+
 // Include Wire Library for I2C
 #include <Wire.h>
  

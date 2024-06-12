@@ -1712,8 +1712,8 @@
 			)
 			(symbol "ESP32-CAM_0_0"
 				(rectangle
-					(start -12.7 -10.16)
-					(end 12.7 12.7)
+					(start -12.7 12.7)
+					(end 12.7 -10.16)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1729,24 +1729,6 @@
 							(size 1.778 1.778)
 						)
 						(justify left bottom)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 10.16 0)
-					(length 5.08)
-					(name "GND@1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "P$1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
 					)
 				)
 				(pin bidirectional line
@@ -1850,24 +1832,6 @@
 						)
 					)
 					(number "P$16"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -17.78 7.62 0)
-					(length 5.08)
-					(name "GPIO1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "P$2"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1986,9 +1950,45 @@
 			)
 			(symbol "ESP32-CAM_1_0"
 				(pin power_in line
+					(at 17.78 -7.62 180)
+					(length 5.08)
+					(name "5V"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at 17.78 -5.08 180)
 					(length 5.08)
 					(name "GND@3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 7.62 0)
+					(length 5.08)
+					(name "GPIO1"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -2003,10 +2003,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 17.78 -7.62 180)
+				(pin bidirectional line
+					(at -17.78 10.16 0)
 					(length 5.08)
-					(name "5V"
+					(name "GND@1"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -19672,7 +19672,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(uuid "c28c9805-e981-4f73-bd3a-9d30b3697b3e")
 		(property "Reference" "U6"
@@ -19691,7 +19691,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ESP32-CAM:ESP32-CAM"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 97.79 149.86 0)
 			(effects
 				(font
@@ -19799,7 +19799,7 @@
 				(hide yes)
 			)
 		)
-		(pin "P$1"
+		(pin "2"
 			(uuid "20761990-9d6d-4d8f-ab4c-08dabc9d618c")
 		)
 		(pin "P$5"
@@ -19817,7 +19817,7 @@
 		(pin "P$4"
 			(uuid "aa0db53f-7635-40e6-a2ff-beede63cb52c")
 		)
-		(pin "P$2"
+		(pin "1"
 			(uuid "fac4d622-6631-4bf2-81da-d052ca89816f")
 		)
 		(pin "P$15"

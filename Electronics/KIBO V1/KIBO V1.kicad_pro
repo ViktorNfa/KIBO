@@ -515,7 +515,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "KIBO_PCBFab/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "KIBO V1.step",

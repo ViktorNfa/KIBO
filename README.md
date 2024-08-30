@@ -1,6 +1,6 @@
 # KIBO Robot Project
 
-![KIBO Logo](path/to/logo.png) *(Optional: Replace with an actual path to the logo image if available)*
+![KIBO Logo](logo.png) *(Optional: Replace with an actual path to the logo image if available)*
 
 ## Overview
 

@@ -4,7 +4,7 @@
 
 ## Overview
 
-KIBO is an advanced robotics platform designed for modularity and versatility. The project includes hardware designs, electronics, and firmware to control a multi-legged robotic system. The primary goal is to implement inverse kinematics (IK) walking modes and gait optimization using Model Predictive Path Integral (MPPI) control through micro-ROS (uROS) in ESP32 and ROS2 nodes with C++.
+KIBO is an advanced robotics platform designed for modularity and versatility. The project includes hardware designs, electronics, and firmware to control a multi-legged wheeled robotic system. The primary goal is to implement inverse kinematics (IK) walking modes and wheeled modes and gait optimization using Model Predictive Path Integral (MPPI) control through micro-ROS (uROS) in ESP32 and ROS2 nodes with C++.
 
 ## Table of Contents
 
@@ -74,9 +74,9 @@ This subdirectory includes additional component libraries for symbols and footpr
 
 ### ESP32 Firmware
 
-The ESP32 firmware is located in the `Code/esp32_cam_tests` directory. This firmware is responsible for:
+The ESP32 firmware is still to be developed, but test files can be located in the `Code/esp32_tests` directory for the ESP32 and the `Code/esp32_cam_tests` directory for the ESP32-CAM. This firmware is responsible for:
 
-- Controlling the camera module.
+- Starting FreeRTOS and seting up the tasks and priorities.
 - Managing sensors and actuators.
 - Communicating with ROS2 nodes via micro-ROS (uROS).
 
@@ -84,7 +84,7 @@ The ESP32 firmware is located in the `Code/esp32_cam_tests` directory. This firm
 
 - `platformio.ini`: Configuration file for PlatformIO.
 - `src/main.cpp`: Main entry point for the ESP32 application.
-- `include/camera_pins.h`: Header file defining the camera's GPIO pins.
+- `include/camera_pins.h`: Header files, e.g., defining the camera's GPIO pins.
 
 ### ROS2 Nodes
 
@@ -108,13 +108,13 @@ MPPI (Model Predictive Path Integral) control is a powerful method for optimizin
 ### Prerequisites
 
 - **PlatformIO**: Required for building and flashing the ESP32 firmware.
-- **ROS2 Foxy**: Recommended version of ROS2 for running the ROS2 nodes.
+- **ROS2 Humble**: Recommended version of ROS2 for running the ROS2 nodes.
 - **uROS Agent**: Necessary for communication between ESP32 and ROS2.
 
 ### Instructions
 
 1. **ESP32 Firmware**:
-   - Navigate to the `Code/esp32_cam_tests` directory.
+   - Navigate to the `Code/esp32_tests` directory.
    - Install the necessary PlatformIO dependencies.
    - Build and upload the firmware to your ESP32 module.
 

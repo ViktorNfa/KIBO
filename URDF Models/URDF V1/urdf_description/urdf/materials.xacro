@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<robot name="urdf" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<material name="silver_default">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+<material name="opaque636363">
+  <color rgba="0.25098039215686274 0.25098039215686274 0.25098039215686274 1.0"/>
+</material>
+<material name="niln_12_con_impresora_3d_formlabs_fuse_1">
+  <color rgba="0.24705882352941178 0.24705882352941178 0.24705882352941178 1.0"/>
+</material>
+<material name="plstico_brillante_translcido_amarillo">
+  <color rgba="0.9098039215686274 0.6784313725490196 0.13725490196078433 1.0"/>
+</material>
+
+</robot>

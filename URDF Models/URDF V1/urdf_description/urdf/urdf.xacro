@@ -1,0 +1,487 @@
+<?xml version="1.0" ?>
+<robot name="urdf" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find urdf_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find urdf_description)/urdf/urdf.trans" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.11409785556143377 0.2160923975106087 0.01801511377195926" rpy="0 0 0"/>
+    <mass value="3.3158005563748603"/>
+    <inertia ixx="0.012791" iyy="0.01265" izz="0.020658" ixy="5.3e-05" iyz="9e-06" ixz="0.000817"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="opaque636363"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Coxa_1_1">
+  <inertial>
+    <origin xyz="0.027257575572939674 0.028618177017522783 0.028058919678104678" rpy="0 0 0"/>
+    <mass value="0.43696782867660955"/>
+    <inertia ixx="0.000188" iyy="0.000183" izz="0.000135" ixy="-3e-05" iyz="6e-06" ixz="9e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.190178 -0.289658 0.0165" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Coxa_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="niln_12_con_impresora_3d_formlabs_fuse_1"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.190178 -0.289658 0.0165" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Coxa_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Coxa_2_1">
+  <inertial>
+    <origin xyz="0.02725547522162386 -0.028619905086615507 0.025760165654032385" rpy="0 0 0"/>
+    <mass value="0.4369178682176243"/>
+    <inertia ixx="0.000188" iyy="0.000183" izz="0.000135" ixy="3e-05" iyz="-6e-06" ixz="9e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.190178 -0.141817 0.0142" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Coxa_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="niln_12_con_impresora_3d_formlabs_fuse_1"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.190178 -0.141817 0.0142" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Coxa_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Coxa_3_1">
+  <inertial>
+    <origin xyz="-0.0272506183362799 -0.0286190490034907 0.028061981366867973" rpy="0 0 0"/>
+    <mass value="0.43719830316904373"/>
+    <inertia ixx="0.000188" iyy="0.000183" izz="0.000135" ixy="-3e-05" iyz="-6e-06" ixz="-9e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.042337 -0.141817 0.0165" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Coxa_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="niln_12_con_impresora_3d_formlabs_fuse_1"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.042337 -0.141817 0.0165" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Coxa_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Coxa_4_1">
+  <inertial>
+    <origin xyz="-0.027255286358615242 0.028619539650880876 0.025760165652992714" rpy="0 0 0"/>
+    <mass value="0.4369178682176243"/>
+    <inertia ixx="0.000188" iyy="0.000183" izz="0.000135" ixy="3e-05" iyz="6e-06" ixz="-9e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.042337 -0.289658 0.0142" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Coxa_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="niln_12_con_impresora_3d_formlabs_fuse_1"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.042337 -0.289658 0.0142" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Coxa_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Femur_1_1">
+  <inertial>
+    <origin xyz="-0.015520875498129971 0.023174915297567544 0.04337089287395373" rpy="0 0 0"/>
+    <mass value="0.2737691041689558"/>
+    <inertia ixx="0.000225" iyy="0.000216" izz="0.000199" ixy="4.6e-05" iyz="-7e-06" ixz="-1.6e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.237024 -0.305037 -0.00075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Femur_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="niln_12_con_impresora_3d_formlabs_fuse_1"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.237024 -0.305037 -0.00075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Femur_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Femur_2_1">
+  <inertial>
+    <origin xyz="-0.015520815420668382 -0.023174311368785117 0.04337086032823338" rpy="0 0 0"/>
+    <mass value="0.27377009354481224"/>
+    <inertia ixx="0.000225" iyy="0.000216" izz="0.000199" ixy="-4.6e-05" iyz="7e-06" ixz="-1.6e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.237024 -0.126437 -0.00075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Femur_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="niln_12_con_impresora_3d_formlabs_fuse_1"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.237024 -0.126437 -0.00075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Femur_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Femur_3_1">
+  <inertial>
+    <origin xyz="0.015521064361139213 -0.023174280733282426 0.043370892873953196" rpy="0 0 0"/>
+    <mass value="0.2737691041689558"/>
+    <inertia ixx="0.000225" iyy="0.000216" izz="0.000199" ixy="4.6e-05" iyz="7e-06" ixz="1.6e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.004509 -0.126437 -0.00075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Femur_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="niln_12_con_impresora_3d_formlabs_fuse_1"/>
+  </visual>
+  <collision>
+    <origin xyz="0.004509 -0.126437 -0.00075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Femur_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Femur_4_1">
+  <inertial>
+    <origin xyz="0.015521004283676032 0.023174945933051694 0.043370860327193235" rpy="0 0 0"/>
+    <mass value="0.27377009354481224"/>
+    <inertia ixx="0.000225" iyy="0.000216" izz="0.000199" ixy="-4.6e-05" iyz="-7e-06" ixz="1.6e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.004509 -0.305037 -0.00075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Femur_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="niln_12_con_impresora_3d_formlabs_fuse_1"/>
+  </visual>
+  <collision>
+    <origin xyz="0.004509 -0.305037 -0.00075" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Femur_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Tibia_1_1">
+  <inertial>
+    <origin xyz="-0.004246971270543298 0.023418841979335414 -0.025715857225801428" rpy="0 0 0"/>
+    <mass value="0.49843994930164737"/>
+    <inertia ixx="0.000539" iyy="0.000537" izz="0.000232" ixy="-4.9e-05" iyz="0.000158" ixz="0.000152"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.261065 -0.329079 -0.05964" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Tibia_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="niln_12_con_impresora_3d_formlabs_fuse_1"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.261065 -0.329079 -0.05964" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Tibia_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Tibia_2_1">
+  <inertial>
+    <origin xyz="-0.004246850840331939 -0.02341835624538037 -0.025714852861407476" rpy="0 0 0"/>
+    <mass value="0.49845955251063434"/>
+    <inertia ixx="0.000539" iyy="0.000538" izz="0.000232" ixy="4.9e-05" iyz="-0.000158" ixz="0.000152"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.261065 -0.102396 -0.05964" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Tibia_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="niln_12_con_impresora_3d_formlabs_fuse_1"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.261065 -0.102396 -0.05964" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Tibia_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Tibia_3_1">
+  <inertial>
+    <origin xyz="0.004247160133553293 -0.023419207415050908 -0.02571585722580256" rpy="0 0 0"/>
+    <mass value="0.49843994930164737"/>
+    <inertia ixx="0.000539" iyy="0.000537" izz="0.000232" ixy="-4.9e-05" iyz="-0.000158" ixz="-0.000152"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02855 -0.102396 -0.05964" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Tibia_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="niln_12_con_impresora_3d_formlabs_fuse_1"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02855 -0.102396 -0.05964" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Tibia_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Tibia_4_1">
+  <inertial>
+    <origin xyz="0.004247039703339856 0.023417990809646072 -0.02571485286244969" rpy="0 0 0"/>
+    <mass value="0.49845955251063434"/>
+    <inertia ixx="0.000539" iyy="0.000538" izz="0.000232" ixy="4.9e-05" iyz="0.000158" ixz="-0.000152"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02855 -0.329079 -0.05964" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Tibia_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="niln_12_con_impresora_3d_formlabs_fuse_1"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02855 -0.329079 -0.05964" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Tibia_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_1_1">
+  <inertial>
+    <origin xyz="-0.011414826765339975 -0.01141481100347358 -0.003393428372262197" rpy="0 0 0"/>
+    <mass value="0.3192676448711226"/>
+    <inertia ixx="0.000187" iyy="0.000187" izz="0.00014" ixy="5.1e-05" iyz="1.5e-05" ixz="1.5e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.261208 -0.374547 0.026518" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Wheel_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plstico_brillante_translcido_amarillo"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.261208 -0.374547 0.026518" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Wheel_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_2_1">
+  <inertial>
+    <origin xyz="-0.011415217559557156 0.011414836361964824 -0.0033934114162502797" rpy="0 0 0"/>
+    <mass value="0.3192676448711226"/>
+    <inertia ixx="0.000187" iyy="0.000187" izz="0.00014" ixy="-5.1e-05" iyz="-1.5e-05" ixz="1.5e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.260724 -0.057412 0.026662" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Wheel_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plstico_brillante_translcido_amarillo"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.260724 -0.057412 0.026662" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Wheel_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_3_1">
+  <inertial>
+    <origin xyz="0.011415015628370679 0.011414445567735236 -0.003393428372272137" rpy="0 0 0"/>
+    <mass value="0.3192676448711226"/>
+    <inertia ixx="0.000187" iyy="0.000187" izz="0.00014" ixy="5.1e-05" iyz="-1.5e-05" ixz="-1.5e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.028693 -0.056928 0.026518" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Wheel_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plstico_brillante_translcido_amarillo"/>
+  </visual>
+  <collision>
+    <origin xyz="0.028693 -0.056928 0.026518" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Wheel_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_4_1">
+  <inertial>
+    <origin xyz="0.011414406422587061 -0.01141520179768396 -0.003393411417283082" rpy="0 0 0"/>
+    <mass value="0.3192676448711226"/>
+    <inertia ixx="0.000187" iyy="0.000187" izz="0.00014" ixy="-5.1e-05" iyz="1.5e-05" ixz="-1.5e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.028208 -0.374063 0.026662" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Wheel_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="plstico_brillante_translcido_amarillo"/>
+  </visual>
+  <collision>
+    <origin xyz="0.028208 -0.374063 0.026662" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://urdf_description/meshes/Wheel_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Servo 1" type="revolute">
+  <origin xyz="0.190178 0.289658 -0.0165" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Coxa_1_1"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Servo 4" type="revolute">
+  <origin xyz="0.190178 0.141817 -0.0142" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Coxa_2_1"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Servo 7" type="revolute">
+  <origin xyz="0.042337 0.141817 -0.0165" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Coxa_3_1"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Servo 10" type="revolute">
+  <origin xyz="0.042337 0.289658 -0.0142" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Coxa_4_1"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Servo 2" type="revolute">
+  <origin xyz="0.046846 0.015379 0.01725" rpy="0 0 0"/>
+  <parent link="Coxa_1_1"/>
+  <child link="Femur_1_1"/>
+  <axis xyz="0.707107 -0.707107 0.0"/>
+  <limit upper="0.0" lower="-3.141593" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Servo 5" type="revolute">
+  <origin xyz="0.046846 -0.01538 0.01495" rpy="0 0 0"/>
+  <parent link="Coxa_2_1"/>
+  <child link="Femur_2_1"/>
+  <axis xyz="0.707107 0.707107 0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Servo 8" type="revolute">
+  <origin xyz="-0.046846 -0.01538 0.01725" rpy="0 0 0"/>
+  <parent link="Coxa_3_1"/>
+  <child link="Femur_3_1"/>
+  <axis xyz="-0.707107 0.707107 -0.0"/>
+  <limit upper="0.0" lower="-3.141593" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Servo 11" type="revolute">
+  <origin xyz="-0.046846 0.015379 0.01495" rpy="0 0 0"/>
+  <parent link="Coxa_4_1"/>
+  <child link="Femur_4_1"/>
+  <axis xyz="-0.707107 -0.707107 0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Servo 3" type="revolute">
+  <origin xyz="0.024041 0.024042 0.05889" rpy="0 0 0"/>
+  <parent link="Femur_1_1"/>
+  <child link="Tibia_1_1"/>
+  <axis xyz="-0.707107 0.707107 -0.0"/>
+  <limit upper="0.0" lower="-2.96706" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Servo 6" type="revolute">
+  <origin xyz="0.024041 -0.024041 0.05889" rpy="0 0 0"/>
+  <parent link="Femur_2_1"/>
+  <child link="Tibia_2_1"/>
+  <axis xyz="0.707107 0.707107 0.0"/>
+  <limit upper="0.0" lower="-2.96706" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Servo 9" type="revolute">
+  <origin xyz="-0.024041 -0.024041 0.05889" rpy="0 0 0"/>
+  <parent link="Femur_3_1"/>
+  <child link="Tibia_3_1"/>
+  <axis xyz="0.707107 -0.707107 0.0"/>
+  <limit upper="0.0" lower="-2.96706" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Servo 12" type="revolute">
+  <origin xyz="-0.024041 0.024042 0.05889" rpy="0 0 0"/>
+  <parent link="Femur_4_1"/>
+  <child link="Tibia_4_1"/>
+  <axis xyz="-0.707107 -0.707107 0.0"/>
+  <limit upper="0.0" lower="-2.96706" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Wheel 1" type="continuous">
+  <origin xyz="0.000143 0.045468 -0.086158" rpy="0 0 0"/>
+  <parent link="Tibia_1_1"/>
+  <child link="Wheel_1_1"/>
+  <axis xyz="0.691987 0.691987 0.20569"/>
+</joint>
+
+<joint name="Wheel 2" type="continuous">
+  <origin xyz="-0.000341 -0.044984 -0.086302" rpy="0 0 0"/>
+  <parent link="Tibia_2_1"/>
+  <child link="Wheel_2_1"/>
+  <axis xyz="0.691987 -0.691987 0.20569"/>
+</joint>
+
+<joint name="Wheel 3" type="continuous">
+  <origin xyz="-0.000143 -0.045468 -0.086158" rpy="0 0 0"/>
+  <parent link="Tibia_3_1"/>
+  <child link="Wheel_3_1"/>
+  <axis xyz="-0.691987 -0.691987 0.20569"/>
+</joint>
+
+<joint name="Wheel 4" type="continuous">
+  <origin xyz="0.000342 0.044984 -0.086302" rpy="0 0 0"/>
+  <parent link="Tibia_4_1"/>
+  <child link="Wheel_4_1"/>
+  <axis xyz="-0.691987 0.691987 0.20569"/>
+</joint>
+
+</robot>

@@ -74,7 +74,7 @@ This subdirectory includes additional component libraries for symbols and footpr
 
 ### ESP32 Firmware
 
-The ESP32 firmware is still to be developed, but test files can be located in the `Code/esp32_tests` directory for the ESP32 and the `Code/esp32_cam_tests` directory for the ESP32-CAM. This firmware is responsible for:
+The ESP32 firmware is still to be developed, but test files can be located in the `Firmware/esp32_tests` directory for the ESP32 and the `Firmware/esp32_cam_tests` directory for the ESP32-CAM. This firmware is responsible for:
 
 - Starting FreeRTOS and seting up the tasks and priorities.
 - Managing sensors and actuators.
@@ -96,6 +96,8 @@ The ROS2 nodes are designed to handle higher-level control and coordination. The
 
 #### Planned Features:
 
+The following planned features will be added to the `CAD` directory.
+
 - **Inverse Kinematics (IK) Implementation**: Calculate joint angles for desired end-effector positions.
 - **Gait Optimization with MPPI**: Optimize walking gaits to enhance stability and energy efficiency.
 
@@ -114,7 +116,7 @@ MPPI (Model Predictive Path Integral) control is a powerful method for optimizin
 ### Instructions
 
 1. **ESP32 Firmware**:
-   - Navigate to the `Code/esp32_tests` directory.
+   - Navigate to the `Firmware/esp32_tests` directory.
    - Install the necessary PlatformIO dependencies.
    - Build and upload the firmware to your ESP32 module.
 

@@ -45,10 +45,12 @@ This project is intended for researchers, hobbyists, and developers interested i
 
 The `CAD` directory contains the STL files required to 3D print the robot's structural components. These include parts like the body frame, limbs, and armor:
 
-- **Body Frame**: `Kibo frame.stl`
+- **Body Frame**: `Kibo frame.stl`, `Frame End Tip.stl`,`L298N Driver Spacer.stl`
 - **Coxa Components**: `Coxa Left.stl`, `Coxa Right.stl`
+- **Femur Components**:`Femur Right.stl`,`Femur Left.stl`
 - **Tibia Components**: `Tibia.stl`, `Tibia Slider.stl`
-- **Armor and Miscellaneous**: `Front Armor.stl`, `Back Armor.stl`, etc.
+- **Armor**: `Bottom Body Armor Left.stl`, `Bottom Body Armor Right.stl`, `Body Armor Spoiler.stl`, `Top Body Armor.stl`
+- **Miscellaneous**: `Servo Back Plate.stl`, `Servo Bushing.stl`, `ring.stl`, `Battery holder.stl`
 
 These components can be printed using any standard 3D printer. Ensure that you use durable materials like PLA+ or PETG for better structural integrity.
 

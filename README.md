@@ -96,7 +96,7 @@ The ROS2 nodes are designed to handle higher-level control and coordination. The
 
 #### Planned Features:
 
-The following planned features will be added to the `CAD` directory.
+The following planned features will be added to the `Simulation` directory.
 
 - **Inverse Kinematics (IK) Implementation**: Calculate joint angles for desired end-effector positions.
 - **Gait Optimization with MPPI**: Optimize walking gaits to enhance stability and energy efficiency.

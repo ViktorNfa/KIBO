@@ -1,4 +1,4 @@
-# KIBO Robot Project
+# KIBO Robot
 
 ![KIBO Logo](logo.png)
 
